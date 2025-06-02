@@ -99,63 +99,6 @@ body {
   position: relative;
   z-index: 2;
 }
-@media (max-width: 420px) {
-  .hero_section {
-    flex-direction: row;
-    padding: 15px 10px;
-    gap: 10px;
-  }
-
-  .hero_left {
-    max-width: 60%;
-    margin-left: 0;
-    margin-top: 0;
-  }
-
-  .hero_left h1 {
-    font-size: 18px;
-    margin-bottom: 8px;
-  }
-
-  .hero_left p {
-    font-size: 12px;
-    margin-top: 8px;
-    margin-bottom: 15px;
-    line-height: 1.4;
-  }
-
-  .hero_buttons {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 6px;
-  }
-
-  .donate_btn,
-  .volunteer_btn {
-    font-size: 11px;
-    padding: 6px 10px;
-    border-radius: 6px;
-  }
-
-  .hero_right {
-    max-width: 40%;
-    margin-top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .image_stack {
-    transform: none;
-    max-width: 100%;
-  }
-
-  .bg_image,
-  .main_image {
-    width: 100%;
-    border-radius: 10px;
-  }
-}
 
 .impact-section {
   position: relative;
@@ -345,12 +288,18 @@ body {
 }
 
 .donate-section {
-  padding: 40px 20px;
+  padding: 40px 0;
   font-family: Arial, sans-serif;
-  max-width: 1200px;               /* Same width as hero section */
-  margin: 0 auto;
+  width: 100vw;               /* Same width as hero section */
+  margin: 0;
   line-height: 2.5;
   background-color: #fff;
+}
+
+.donate-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .tab-header {
@@ -458,21 +407,6 @@ body {
   justify-content: center;
   flex-wrap: wrap;
 }
-
-/* .donation-card {
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-  border: 1px solid #eee;
-  border-radius: 12px;
-  padding: 15px;
-  min-height: 160px;
-  max-width: 500px;
-  gap: 15px;
-  background: #fff;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  line-height: 1.8;
-} */
 
 .donation-card {
   display: flex;

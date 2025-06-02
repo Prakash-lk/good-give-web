@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import SignupModal from "../components1/SignupModal";
 import { Link } from "react-router-dom";
-import '../App.css';
+import "../App.css";
 
 function Header() {
   const [isAboutOpen, setIsAboutOpen] = useState(false);
@@ -26,7 +26,11 @@ function Header() {
           <nav className="nav-links">
             <a href="#" className="dropdown" onClick={toggleAboutDropdown}>
               About{" "}
-              <i className={`fas fa-chevron-down arrow ${isAboutOpen ? "open" : ""}`}></i>
+              <i
+                className={`fas fa-chevron-down arrow ${
+                  isAboutOpen ? "open" : ""
+                }`}
+              ></i>
             </a>
             {isAboutOpen && (
               <div className="dropdown-content">
@@ -35,7 +39,9 @@ function Header() {
                 <a href="#">Team</a>
               </div>
             )}
-            <a href="#" className="highlight">Donate</a>
+            <a href="#" className="highlight">
+              Donate
+            </a>
             <a href="#">Volunteer</a>
             <Link to="/what-we-do">What We Do</Link>
             <a href="#">Contact Us</a>
@@ -43,7 +49,9 @@ function Header() {
         </div>
         <div className="actions">
           <img src="/images/cart1.png" alt="Cart Icon" className="cart-icon" />
-          <button className="login-btn" onClick={handleLoginClick}>Login</button>
+          <button className="login-btn" onClick={handleLoginClick}>
+            Login
+          </button>
         </div>
       </header>
       {showSignup && <SignupModal onClose={handleCloseModal} />}
