@@ -1,0 +1,154 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.volunteer-modal {
+  background: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  max-width: 700px;
+  width: 90%;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: none;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.modal-subtitle {
+  text-align: center;
+  font-size: 14px !important;
+  margin-bottom: 20px;
+}
+
+.section-label {
+  font-weight: bold;
+  font-size: 16px;
+  margin: 20px 0 10px;
+}
+
+.volunteer-form .form-group {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.volunteer-form input[type="text"],
+.volunteer-form input[type="email"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-weight: 100;
+  font-size: 14px;
+}
+
+
+.checkbox-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px 20px;
+  margin-bottom: 20px;
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.checkbox-group label > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox-desc {
+  margin: 4px 0 0;
+  font-size: 12px !important;
+  color: #666;
+  line-height: 1.3;
+}
+
+
+.thank-you-msg {
+  text-align: center;
+  margin: 4px 0 16px;
+  color: #555;
+  font-size: 12px !important;
+}
+
+.submit-btn {
+  background-color: orange;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  display: block;
+  margin: 0 auto;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.floating-label {
+  position: relative;
+  flex: 1;
+}
+
+.floating-label input {
+  width: 100%;
+  padding: 12px 10px 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+}
+
+.floating-label label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  color: #888;
+  font-size: 16px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.2s ease;
+  background: white;
+  padding: 0 4px;
+}
+
+.floating-label input:focus + label,
+.floating-label input:not(:placeholder-shown) + label,
+.floating-label input:valid + label {
+  top: 0;
+  left: 8px;
+  font-size: 12px;
+  color: #555;
+  transform: translateY(-50%) scale(0.95);
+}
+.section-divider {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 10px 0 8px;
+}

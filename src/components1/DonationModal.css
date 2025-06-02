@@ -1,0 +1,153 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 400px;
+  max-width: 90%;
+  position: relative;
+  text-align: center;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  border: none;
+  background: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.modal-title {
+  font-size: 20px;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+/* Start radio buttons from the left */
+.donation-options {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.donation-options label {
+  margin-right: 20px;
+  font-size: 14px;
+}
+
+/* Box around Give Once */
+.give-once-label {
+  display: inline-block;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 100%;
+  border-radius: 8px;
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+
+.give-once-desc {
+  font-size: 12px !important;
+  color: #000;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  text-align: left;
+  justify-content: flex-start;
+  /* font-weight: lighter; */
+}
+
+.modal-image {
+  margin-bottom: 8px; /* adjust spacing below image */
+}
+
+.modal h3 {
+  font-size: 28px;
+  font-weight: normal;
+}
+
+.modal p {
+  font-size: 14px;
+  margin-bottom: 18px;
+  margin-top: 8px;
+}
+
+/* Amount buttons with equal size */
+.amount-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.amount-buttons button {
+  padding: 12px;
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Custom amount input */
+.custom-amount {
+  margin-top: 0; /* remove extra gap */
+  margin-bottom: 16px;
+  padding: 10px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.amount-buttons button.selected {
+  background-color: orange;
+  color: white;
+  border-color: orange;
+  font-weight: bold;
+}
+
+/* Payment note and donate button */
+.payment-icons p {
+  font-size: 10px !important;
+  color: #000;
+  margin-bottom: 1rem;
+}
+
+.donate-action-btn {
+  background: orange;
+  color: white;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.tax-note {
+  font-size: 10px !important;
+  margin-top: 0.5rem;
+  color: #000;
+}
+
+.info-img {
+  width: 14px;
+  height: 14px;
+  margin-right: 2px;
+  vertical-align: middle;
+}
+
